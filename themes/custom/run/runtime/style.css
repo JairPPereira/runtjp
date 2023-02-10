@@ -1,0 +1,481 @@
+@font-face {
+  font-family: "GothamMedium";
+  src: local('GothamMedium'),
+       local('Gotham Medium'),
+        url("fonts/gothammedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: local('Gotham-Book'),
+       local('Gotham Book'),
+        url("fonts/gothambook.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: local('Gotham-Bold'),
+       local('Gotham Bold'),
+        url("fonts/gothambold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: local('Gotham-Book'),
+       local('Gotham Book'),
+        url("fonts/gothambook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: local('Gotham-Medium'),
+       local('GothamMedium'),
+       local('Gotham Medium'),
+        url("fonts/gothammedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: local('Gotham-Bold'),
+       local('GothamBold'),
+       local('Gotham Bold'),
+        url("fonts/gothambold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: local('Gotham-Black'),
+       local('GothamBlack'),
+       local('Gotham Black'),
+        url("fonts/gothamblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+body {
+  font-family: Gotham, "Century Gothic", CenturyGothic, sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+body.node-type-page {
+  font-family: Gotham, "Century Gothic", CenturyGothic, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.fieldset-legend {
+  font-family: Gotham, "Century Gothic", CenturyGothic, sans-serif;
+}
+
+.breadcrumbs {
+  display: none;
+}
+
+a,
+ .breadcrumbs a {
+  color: #ffdd00;
+  transition: color 0.3s;
+}
+
+a:hover,
+a:focus {
+  color: #ffdd00;
+}
+
+.meta-header {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  background: #131313;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.meta-header a,
+.off-canvas a {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.meta-header a:hover,
+.meta-header a:focus,
+.off-canvas a:hover,
+.off-canvas a:focus {
+  color: #ffffff;
+}
+
+.meta-header-inner .block-sitebranding {
+  overflow: hidden;
+  max-width: none !important;
+  width: auto !important;
+  margin-left: 0 !important;
+}
+
+.menu-icon::after,
+.menu-button-wrapper .menu-icon:hover::after {
+  color: #ffffff;
+  background: #ffffff;
+  box-shadow: 0 7px 0 #ffffff, 0 14px 0 #ffffff;
+}
+
+.menu-icon::after:hover,
+.menu-icon::after:focus,
+.menu-button-wrapper .menu-icon:hover::after:hover,
+.menu-button-wrapper .menu-icon:hover::after:focus {
+  background: #ffdd00;
+  box-shadow: 0 7px 0 #ffdd00, 0 14px 0 #ffdd00;
+}
+
+.meta-header-inner .block-sitebranding img {
+  max-height: 48px;
+}
+
+.region-header {
+  padding-top: 3em;
+}
+
+label {
+  color: #ffffff;
+}
+
+nav.tabs {
+
+}
+
+.button {
+  background-color: #ffdd00;
+  color: black;
+  background-image: linear-gradient(#fffa05, #f2ac0f);
+  -webkit-transition: background-image 0.3s, background-color 0.3s;
+  -moz-transition: background-image 0.3s, background-color 0.3s;
+  -ms-transition: background-image 0.3s, background-color 0.3s;
+  -o-transition: background-image 0.3s, background-color 0.3s;
+  transition: background-image 0.3s, background-color 0.3s;
+  border: 1px solid #ffdd04;
+}
+
+
+.button:hover {
+  background-color: #999999;
+  color: black;
+  background-image: linear-gradient(#fffa05, #f2ac0f);
+}
+
+.button.dimmed {
+  background: rgba(255,225,0,0.8);
+  text-decoration: none;
+  padding: 0.75em;
+  border: 1px solid rgba(207, 207, 207, 0.8);
+  font-size: 0.76rem;
+  color: #444;
+}
+
+.pager__item.is-active {
+  background-color: #ffdd00;
+}
+
+table thead,
+table tbody,
+table tfoot {
+  background-color: #ffdd00;
+  color: #000000;
+}
+
+/* prevents striping for dark themes */
+table tbody tr {
+  background-color: #ffdd00;
+}
+
+table a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+table a:hover {
+  color: #ffffff;
+}
+
+#block-runtime-primary-local-tasks {
+  margin: 1rem 0;
+}
+
+#block-runtime-local-actions li {
+  list-style-type: none;
+}
+
+footer {
+  background: #131313;
+  color: #ffffff;
+  border-bottom-color: #ffdd00;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #ffffff;
+}
+
+#gdpr-footer {
+  background: #131313;
+  color: #ffffff;
+}
+
+#gdpr-footer a {
+  color: #ffffff;
+}
+
+/* Maybe CHANGE ME */
+.ottera--epg {
+  background: rgba(84, 84, 84, 0.9); /* default: #000000aa */
+  color: #FFFFFF; /* default: #FFFFFF */
+}
+
+.ottera--row--objects.flickity-enabled.flickity--past-start::before,
+.ottera--row--objects.ottera-row-style--slider.flickity-enabled::before,
+.show--season-episodes.flickity-enabled.flickity--past-start::before {
+  background: linear-gradient(to left, #00000000 0, #000000 100%);
+}
+
+.ottera--row--objects.flickity-enabled:not(.flickity--at-end)::after,
+.ottera--row--objects.ottera-row-style--slider.flickity-enabled::after,
+.show--season-episodes.flickity-enabled:not(.flickity--at-end)::after  {
+  background: linear-gradient(to right, #00000000 0, #000000 100%);
+}
+
+/* Maybe CHANGE ME */
+.install-android--icon a {
+  background-image: url("/themes/custom/run/runtime/icon-192.png");
+}
+
+/* Maybe CHANGE ME if the border settings doesn't make sense */
+.ottera-row-format--widescreen .ottera--row--item img,
+.ottera-row-format--poster .ottera--row--item img,
+.ottera--epg, .ottera--epg img {
+  border: none;
+
+  border-radius: 0; /* default: 10px */
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+
+  transition: border-color 0.5s;
+}
+
+.ottera-row-format--widescreen.ottera-row-sf--1_25 .ottera--row--item {
+  min-width: calc(215px * 1.25);
+}
+
+.ottera-row-format--widescreen.ottera-row-sf--1_25 .ottera--row--item img {
+  height: calc(120px * 1.25);
+}
+
+/* Maybe CHANGE ME if the color doesn't exist */
+.ottera-row-format--widescreen .ottera--row--item img:hover,
+.ottera-row-format--widescreen .ottera--row--item img:focus,
+.ottera-row-format--poster .ottera--row--item img:hover,
+.ottera-row-format--poster .ottera--row--item img:focus,
+.ottera-row-format--widescreen .ottera--row--item:hover img,
+.ottera-row-format--widescreen .ottera--row--item:focus img,
+.ottera-row-format--poster .ottera--row--item:hover img,
+.ottera-row-format--poster .ottera--row--item:focus img,
+.ottera--epg:hover,
+.ottera--epg:focus {
+  border-color: #ffdd00; /* default: #ffffff */
+}
+
+.ottera--row--header {
+  font-family: Gotham, "Century Gothic", CenturyGothic, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+/* CHANGE ME if you want to display product names on the upgrade page
+.upgrade-body .product--name {
+  display: block;
+}
+*/
+
+.devices .content-wrapper {
+  padding-bottom: 0;
+}
+
+#block-runtime-content .run-devices-tvs {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.run-devices-tvs .columns {
+  text-align: center;
+}
+
+.run-devices-tvs .connected-tvs {
+  font-weight: 700;
+}
+
+.run-devices-tvs .connected-tvs h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+#block-runtime-content .run-devices-buttons {
+  width: 100%;
+  max-width: 101.5%;
+  padding-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.run-devices-buttons .columns {
+  width: 100%;
+  text-align: center;
+}
+
+.run-devices-buttons .columns a {
+  display: inline-block;
+  margin: 0 0.5em 0.5em;
+  max-height: 32px;
+}
+
+.run-devices-body {
+  width: 100vw;
+  left: -1em;
+  position: relative;
+  background-color: #ffdd00;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+#block-runtime-content .run-devices-body > .row {
+  max-width: 90%;
+}
+
+.run-devices-body .row .columns {
+  text-align: center;
+}
+
+.run-devices-body a {
+  color: black;
+  text-decoration: none;
+}
+
+.run-devices-body a:hover,
+.run-devices-body a:focus {
+  text-decoration: underline;
+}
+
+.run-devices-body h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.run-devices-body p {
+  font-weight: bold;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-devices--content h3 {
+  text-transform: uppercase;
+  color: #ffdd00;
+  padding-top: 2rem;
+}
+
+.block-devices--content hr {
+  border-color: #666;
+  padding-top: 2rem;
+}
+
+.devices-list {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.devices-list .device-icon {
+  height: 32px;
+}
+
+.devices-list .apple-store {
+  background-image: url("/themes/custom/run/runtime/img/devices/btn-ios-dark.png");
+}
+
+.devices-list .google-play {
+  background-image: url("/themes/custom/run/runtime/img/devices/btn-google-dark.png");
+}
+
+.devices-list .roku {
+  background-image: url("/themes/custom/run/runtime/img/devices/btn-roku-dark.png");
+}
+
+.devices-list .apple-tv {
+  background-image: url("/themes/custom/run/runtime/img/devices/btn-appletv-dark.png");
+}
+
+.devices-list .android-tv {
+  background-image: url("/themes/custom/run/runtime/img/devices/btn-androidtv-dark.png");
+}
+
+.devices-list .amazon-fire-tv {
+  background-image: url("/themes/custom/run/runtime/img/devices/btn-firetv-dark.png");
+}
+
+@media all and (min-width: 1024px) {
+  .meta-header {
+    padding-top: 1.25rem;
+  }
+
+  .ottera-row-format--widescreen .ottera--row--item img,
+  .ottera-row-format--poster .ottera--row--item img,
+  .ottera--epg, .ottera--epg img {
+    /*border-radius: calc(5px * 2);*/
+    /*-moz-border-radius: calc(5px * 2);*/
+    /*-webkit-border-radius: calc(5px * 2);*/
+  }
+
+  .ottera-content > .ottera-row-format--widescreen .ottera--row--item img,
+  .ottera-content > .ottera-row-format--poster .ottera--row--item img,
+  .ottera--epg, .ottera--epg img {
+    /*border-radius: calc(5px * 4);*/
+    /*-moz-border-radius: calc(5px * 4);*/
+    /*-webkit-border-radius: calc(5px * 4);*/
+  }
+
+  .run-devices-tvs {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .run-devices-tvs .connected-tvs h2 {
+    padding-top: 3rem;
+  }
+
+  #block-runtime-content .run-devices-buttons {
+    padding-bottom: 4em;
+  }
+
+  .run-devices-body {
+    left: -3em;
+    padding-bottom: 4em;
+    padding-top: 4em;
+  }
+
+  .run-devices-body img {
+    max-height: 230px;
+    width: auto;
+  }
+
+  #block-runtime-content .run-devices-body > .row {
+    width: 1250px;
+    max-width: 100%;
+  }
+}
